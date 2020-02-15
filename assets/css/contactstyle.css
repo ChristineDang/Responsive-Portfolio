@@ -104,3 +104,12 @@ input[type=submit]{
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 980px) and (min-width: 768px), (min-width: 640px) {
+    body{     
+        background-image: url("../images/subtle_white_feathers.png");   
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr auto; 
+        }
+    }
