@@ -3,8 +3,16 @@ body {
     
     
 }
+#brand {
+    position: absolute;
+    background: #439692;
+    color: white;
+    padding: 30px;
+    top: -20px;
+    left: 0;
 
-h1 {
+}
+/* h1 {
     background: #439692;
     position: absolute;
     padding: 40px;
@@ -17,7 +25,7 @@ h1 {
     color: white;
     margin-left: 400px;
 
-}
+} */
 
 .topnav {
     background: white;
@@ -87,6 +95,41 @@ h2 {
     text-align: center;
 }
 
+
+@media screen and (max-width: 640px) {
+    #brand{
+        display: block;
+        flex-grow: inherit;
+        position: static;
+    }
+    .topnav a {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #brand{
+        display: block;
+        flex-grow: inherit;
+    }
+    .topnav a {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #brand{
+        display: block;
+        flex-grow: inherit;
+    }
+    .topnav a {
+        text-align: center;
+
+    }
+}
+/* }
 @media screen and (max-width: 980px) and (min-width: 768px), (min-width: 640px) {
     body{     
         background-image: url("../images/subtle_white_feathers.png");   
@@ -94,4 +137,4 @@ h2 {
         display: grid;
         grid-template-rows: 1fr auto; 
         }
-    }
+    } */

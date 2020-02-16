@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <!--Link to stylesheet-->
         <link rel="stylesheet" href="assets/css/portfoliostyle.css">
@@ -11,16 +11,20 @@
     <body>
         <!--Top & nav bar-->
         <header>
-            <h1>Christine Dang</h1>
-
+          
+            <!--In CSS, fix @media query for resizing screen-->
+            <!--In CSS, fix #brand for correct positioning-->
             <div class="topnav">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="Contact.html">Contact</a>
+                <h1 id="brand">Christine Dang</h1>
+                <a class="option" href="index.html">About</a>
+                <a class="option" href="portfolio.html">Portfolio</a>
+                <a class="option" href="Contact.html">Contact</a>
             </div>  
         </header>
         <br>
 
+
+        <!--In CSS, fix responsiveness of background-->
         <div class="content">
             <section>
                 <h2>Portfolio</h2>

@@ -1,6 +1,13 @@
-h1 {
+body{     
+    background-image: url("../images/subtle_white_feathers.png");   
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto; 
+    }
+
+/* h1 {
     background: #439692;
-    position: fixed;
+    position: inherit;
 
     padding: 40px;
     text-align: center;
@@ -10,11 +17,24 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     color: white;
-    margin-left: fixed;
+
+} */
+
+#brand {
+    position: absolute;
+    background: #439692;
+    color: white;
+    padding: 30px;
+    top: -20px;
+    left: 0;
+
 }
+
+
+
 .topnav {
     background: white;
-    position: absolute right;
+    position: inherit;
     padding: 40px;
     text-align: right;
     word-spacing: 30px;
@@ -23,6 +43,9 @@ h1 {
     font-size: 20px;
     border-width: 5px;
 }
+
+
+
 
 .content {
 
@@ -39,12 +62,6 @@ h1 {
     width: 50%;
 
 
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .card {
@@ -78,7 +95,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* .container {
+.container {
     width:960px;
     line-height: 2;
     margin: 0 auto 0 auto;
@@ -94,7 +111,7 @@ h2 {
     margin-bottom: 20px;
     resize: vertical;
 
-} */
+}
 
 #hangman {
     width: inherit;
@@ -141,11 +158,45 @@ h2 {
     text-align: center;
 }
 
-@media screen and (max-width: 980px) and (min-width: 768px), (min-width: 640px) {
-    body{     
-        background-image: url("../images/subtle_white_feathers.png");   
-        min-height: 100%;
-        display: grid;
-        grid-template-rows: 1fr auto; 
-        }
+
+@media screen and (max-width: 640px) {
+    #brand{
+        display: block;
+        flex-grow: inherit;
+        position: static;
     }
+    .topnav a {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #brand{
+        display: block;
+        flex-grow: inherit;
+    }
+    .topnav a {
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #brand{
+        display: block;
+        flex-grow: inherit;
+    }
+    .topnav a {
+        text-align: center;
+
+    }
+}
+
+
+/* @media screen and (max-width: 980px) and (min-width: 768px), (min-width: 640px) {
+
+    h1 {
+        flex-direction: column;
+    }
+    } */
